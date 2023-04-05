@@ -1,0 +1,7 @@
+Package: gflags
+Version: 2.2.2
+Port-Version: 5
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 5064a57daf2d64d9a0e2cea33c05e170aadf501b17b69e1075ebc57b4e329008
+Description: A C++ library that implements commandline flags processing

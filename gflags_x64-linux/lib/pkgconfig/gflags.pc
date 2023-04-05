@@ -1,0 +1,14 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+bindir=${prefix}/bin
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gflags
+Version: 2.2.2
+Description: A commandline flags library that allows for distributed flags.
+URL: http://gflags.github.io/gflags
+
+Libs: "-L${libdir}" -lgflags -lpthread
+Requires: 
+Cflags: "-I${includedir}"

@@ -1,0 +1,8 @@
+Package: glog
+Version: 0.6.0
+Port-Version: 2
+Depends: gflags, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: ce6982f42c16e5d664652e08ebfc13034fb83090ef8df66953f4415a603c15eb
+Description: C++ implementation of the Google logging module
