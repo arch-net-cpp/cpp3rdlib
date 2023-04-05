@@ -83,5 +83,4 @@ set_target_properties(libacl_fiber PROPERTIES
         IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
         IMPORTED_LOCATION "${LIBACL_FIBER_LIBRARY}"
         )        
-
-        // ar crsT libacl_fiber.a libacl.a libprotocol.a libacl_cpp.a libfiber.a libfiber_cpp.a
+#// ar crsT libacl_fiber.a libacl.a libprotocol.a libacl_cpp.a libfiber.a libfiber_cpp.a
