@@ -1,0 +1,14 @@
+Package: libevent
+Version: 2.1.12+20230128
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: f4fe1df3ccc55a35ff0acb6e913ce9c39ec2863691b06aad890cd857c5a86999
+Description: An event notification library
+Default-Features: thread
+
+Package: libevent
+Feature: thread
+Architecture: x64-linux
+Multi-Arch: same
+Description: Support for thread

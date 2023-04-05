@@ -1,0 +1,8 @@
+Package: zstd
+Version: 1.5.4
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 6fdf5e29e83f9b483c51505a54f893513f8b2270e6849ce81ea118d387a28347
+Description: Zstandard - Fast real-time compression algorithm
