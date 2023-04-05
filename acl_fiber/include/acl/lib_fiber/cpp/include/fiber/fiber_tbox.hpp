@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include "fiber_mutex.hpp"
 #include "fiber_cond.hpp"
+#include <acl_cpp/stdlib/box.hpp>
 
 namespace acl {
 

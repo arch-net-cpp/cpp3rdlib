@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.2.0)
 project(Acl)
-
 #message(${CMAKE_SYSTEM_NAME})
 
 #if(COMMAND CMAKE_POLICY)
@@ -78,6 +77,8 @@ if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
 	set(CMAKE_MACOSX_RPATH build)
 endif()
 
+set(CMAKE_CXX_FLAGS "-Wno-error=deprecated-declarations -Wno-deprecated-declarations ")
+
 add_subdirectory(lib_acl acl)
 add_subdirectory(lib_protocol protocol)
 add_subdirectory(lib_acl_cpp acl_cpp)
@@ -93,4 +94,8 @@ endif()
 	if (ACL_BUILD_SHARED MATCHES "YES")
 		add_dependencies(fiber_cpp acl_cpp protocol acl fiber)
 	endif()
+
+	add_library(acl_fiber STATIC test.cpp)
+	target_link_libraries(acl_fiber fiber_cpp acl_cpp protocol acl fiber)
+
 #endif()
